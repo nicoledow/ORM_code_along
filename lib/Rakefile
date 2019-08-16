@@ -7,3 +7,7 @@ end
 task :console do
 pry.start
 end
+
+task :scrape_rooms do 
+    RoomScraper.new().update_rooms
+end
